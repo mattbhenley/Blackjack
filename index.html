@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blackjack</title>
+    <link href="https://fonts.googleapis.com/css?family=Mallanna" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+
+    <div id="table">
+        <div id="dealer-score" class=""score>Dealer Score: <span>0</span></div>
+        <div id="deck">
+            <div class="back"></div>
+        </div>
+        <div class="container" id="dealer"></div>
+    </div>
+
+    <div class="border-line"></div>
+    
+    <div id="player-score" class="score>Your Score: "> <span>0</span></div>
+    <div class="container" id="player">
+    </div>
+
+    <div id="panel">
+        <div id="status">Press Deal To Start The Game</div>
+
+        <button id="deal" class="blue" type="button">DEAL</button>
+        <button id="hit" class="green" type="button" disabled>HIT</button>
+        <button id="stand" class="red" type="button" disabled>STAND</button>
+    </div>
+
+    <script type="text/javascript" src="blackjack.js"></script>
+    <script type="text/javascript">
+    //initialize the game
+    BlackjackJS.init();
+    </script>
+</body>
+</html>
